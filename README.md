@@ -5,7 +5,7 @@ In some parts ot the web, there's a game whose main objective is to see, in how 
 
 Requirements : Flask, Python, and a knack for trying to figure out the best chain 'til the goal !
 
-Download the archive and setup a Python web server 
+Download the archive and setup a Python web server :
 
 ##### python -m SimpleHTTPServer
 
