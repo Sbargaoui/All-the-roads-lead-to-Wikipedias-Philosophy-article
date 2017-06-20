@@ -7,7 +7,7 @@ Requirements : Flask, Python, and a knack for trying to figure out the best chai
 
 Download the archive and setup a Python web server 
 
-### python -m SimpleHTTPServer
+##### python -m SimpleHTTPServer
 
 
 (Ex: http://localhost:5000/) and you're good to go !
