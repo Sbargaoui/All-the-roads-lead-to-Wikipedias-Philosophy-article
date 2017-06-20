@@ -1,0 +1,110 @@
+/* Le CSS va ici */
+
+body{
+	background-color: #FFF4E9;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 25px;
+}
+
+ul{
+list-style:none;
+margin-left:10px;
+padding-left:10px;
+}
+
+
+ul[class=flashes]{
+	background: #87E752; 
+	padding: 0.5em;                  
+	border: 1px solid #aacbe2;
+	color:#FFF4E9;
+}
+
+
+li{
+margin-bottom:10px;
+list-style:none;
+}
+
+h1
+{
+  color: white;
+ background-color: #AB3428; 
+ text-align: center;
+}
+
+input[type=submit]{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+float: right;
+font-size: 25px;
+
+}
+
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: border: 1px solid navy;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 25px;
+}
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    margin-right: 7px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    margin-right: 7px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #2D728F;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+label:hover, label:active, input:hover+label, input:active+label {
+    color:#2D728F;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+form{
+margin-left: 25%;
+margin-right:25%;
+width: 50%;
+border-style:outset;
+}
+
+
+.flash
+{ 
+	background: #2D728F; 
+	padding: 0.5em;                  
+	border: 1px solid #aacbe2; 
+}

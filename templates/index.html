@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <title>Tous les chemins mènent à la philosophie !</title>
+  </head>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }} {{session.score}}.</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+  <body>
+    {% block body %}
+      {# Début du bloc "body", dont vous devez modifier le contenu #} 
+      <!-- Debut du formulaire -->
+      <form enctype="multipart/form-data" action="/new-game" method="post">
+          <fieldset>
+              <legend>Tous les chemins mènent à la philosophie !</legend>
+                  <p>
+                      <label>Titre de la page pour commencer la partie :</label>
+                      <input type="text" name="firstPage">
+                      <input type="submit" name="submit" value="Commencer" />
+                  </p>
+          </fieldset>
+      </form>
+      <!-- Fin du formulaire -->
+      
+      {# Fin du bloc "body" #}
+    {% endblock %}
+  </body>
+</html>

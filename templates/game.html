@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block body %}
+<form enctype="multipart/form-data" action="/move" method="post">
+  <h1><a href="/">{{session.article}} : Score = {{session.score}}</a></h1>
+  {% for item in l %}
+    <li>
+      <input type="hidden" name="score" value={{session.score}}>
+      <input type="radio" id="id{{loop.index}}" name="destination" value=" {{item}} " "{%if loop.first%} checked {%endif%}"/>
+      <label for="id{{loop.index}}"> {{item}} </label>
+    </li>
+  {% endfor %}
+  <input type="submit"/>
+  </form>
+
+{% endblock %}
+
+
